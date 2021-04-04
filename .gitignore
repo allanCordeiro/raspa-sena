@@ -17,6 +17,7 @@ pyvenv.cfg
 geckodriver
 venv
 data
+logs
 
 pip-selfcheck.json
 
