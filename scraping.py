@@ -25,7 +25,7 @@ class Scraping:
                     award_data = driver.find_element_by_class_name("title-bar.clearfix").\
                         find_element_by_tag_name("span").text
                     print(f'Raspando dados de: {award_data}')
-                    lucky_numbers = driver.find_element_by_id("ulDezenas").find_elements_by_tag_name("li")
+                    lucky_numbers = self._get_lucky_numbers(driver.find_element_by_id("ulDezenas").find_elements_by_tag_name("li"))
                     winners_data = driver.find_element_by_class_name("related-box.gray-text.no-margin").text
                     forecast_data = driver.find_element_by_class_name("totals").text
                     consolidated = [award_data, lucky_numbers, winners_data, forecast_data]
@@ -54,3 +54,10 @@ class Scraping:
     def _loop_control(award_data):
         info = award_data.split(" ")
         return int(info[1])
+
+    @staticmethod
+    def _get_lucky_numbers(data):
+        number_set = []
+        for number in data:
+            number_set.append(number.get_attribute("innerHTML"))
+        return number_set
