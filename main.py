@@ -1,13 +1,14 @@
 import json
 from scraping import Scraping
 from normalization import Normalize
+from conf import Config
 
 def main():
     data = []
     final_json = []
     scraping = Scraping(
         'http://loterias.caixa.gov.br/wps/portal/loterias/landing/megasena/',
-        '2300'
+        '1250'
     )
     data = scraping.scrap_award()
     for line in data:
@@ -18,4 +19,6 @@ def main():
         json.dump(final_json, outfile)
 
 if __name__ == '__main__':
-    main()
+    # main()
+    print(Config.get_config('last_prize_scraped'))
+    Config.set_last_prize('1500')
