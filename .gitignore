@@ -13,7 +13,6 @@
 [Ll]ocal
 [Ss]cripts
 pyvenv.cfg
-.venv
 geckodriver
 data
 logs
