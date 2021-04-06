@@ -15,7 +15,6 @@
 pyvenv.cfg
 .venv
 geckodriver
-venv
 data
 logs
 
