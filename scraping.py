@@ -16,6 +16,7 @@ class Scraping:
         logging.basicConfig(filename='logs/scrapping.log', level=logging.INFO)
 
     def scrap_award(self):
+        # with webdriver.Firefox() as driver:
         with webdriver.Firefox(executable_path=r'geckodriver/geckodriver') as driver:
             wait = WebDriverWait(driver, 10)
             driver.get(self._uri)
@@ -25,7 +26,7 @@ class Scraping:
                     time.sleep(2)
                     award_data = driver.find_element_by_class_name("title-bar.clearfix").\
                         find_element_by_tag_name("span").text
-                    print(f'Raspando dados de: {award_data}')
+                    logging.info(f'{time.strftime("%m/%d/%Y %I:%M:%S %p")}: Raspando dados do {award_data}')
                     lucky_numbers = self._get_lucky_numbers(driver.find_element_by_id("ulDezenas").find_elements_by_tag_name("li"))
                     winners_data = driver.find_element_by_class_name("related-box.gray-text.no-margin").text
                     forecast_data = driver.find_element_by_class_name("totals").text
@@ -37,9 +38,9 @@ class Scraping:
                         self._control_number = current_award
                     else:
                         logging.info(f'{time.strftime("%m/%d/%Y %I:%M:%S %p")}: Fim da execução')
-                        Config.set_last_prize(str(self._control_number))
+                        Config.set_last_prize(str(self._control_number + 1))
                         break
-                    time.sleep(4)
+                    time.sleep(10)
                     driver.find_element_by_css_selector("a[ng-click='carregaProximoConcurso()']").click()
                 except UnexpectedAlertPresentException as AlertE:
                     logging.info(f'{time.strftime("%m/%d/%Y %I:%M:%S %p")}: Chegamos no fim da página')
