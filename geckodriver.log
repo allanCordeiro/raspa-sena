@@ -1184,3 +1184,64 @@ JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: 
 (firefox:40942): GLib-GObject-WARNING **: 21:05:00.101: ../../../gobject/gsignal.c:3596: signal name 'load_complete' is invalid for instance '0x7f7e9fdd7530' of type 'MaiAtkType119'
 1617581105814	Marionette	INFO	Stopped listening on port 39457
 1617581105966	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
+1617667663048	geckodriver	INFO	Listening on 127.0.0.1:60101
+1617667664046	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilezXAZtj"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1617667668363	Marionette	INFO	Listening on port 42205
+1617667668484	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://loterias.caixa.gov.br/InstitucionalTema/themes/static/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://loterias.caixa.gov.br/InstitucionalTema/themes/static/js/rybena-1.0.js, line 0: Successfully compiled asm.js code (total compilation time 129ms)
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: http://loterias.caixa.gov.br/wps/PA_loterias-pub/js/portalUtil.js, line 32: ReferenceError: can't access lexical declaration 'resultado' before initialization
+1617667731542	Marionette	INFO	Stopped listening on port 42205
+1617667877816	geckodriver	INFO	Listening on 127.0.0.1:50139
+1617667877821	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilehJbhOK"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1617667881165	Marionette	INFO	Listening on port 40523
+1617667881254	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://loterias.caixa.gov.br/InstitucionalTema/themes/static/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://loterias.caixa.gov.br/InstitucionalTema/themes/static/js/rybena-1.0.js, line 0: Successfully compiled asm.js code (total compilation time 86ms)
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: http://loterias.caixa.gov.br/wps/PA_loterias-pub/js/portalUtil.js, line 32: ReferenceError: can't access lexical declaration 'resultado' before initialization
+JavaScript error: http://loterias.caixa.gov.br/wps/PA_loterias-pub/js/portalUtil.js, line 32: ReferenceError: can't access lexical declaration 'resultado' before initialization
+1617667905398	Marionette	INFO	Stopped listening on port 40523
+1617668028621	geckodriver	INFO	Listening on 127.0.0.1:52471
+1617668028629	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile79tCab"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1617668032049	Marionette	INFO	Listening on port 38175
+1617668032160	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://loterias.caixa.gov.br/InstitucionalTema/themes/static/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://loterias.caixa.gov.br/InstitucionalTema/themes/static/js/rybena-1.0.js, line 0: Successfully compiled asm.js code (total compilation time 143ms)
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1617668041620	Marionette	INFO	Stopped listening on port 38175
+1617668053522	geckodriver	INFO	Listening on 127.0.0.1:48285
+1617668053528	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileUZfVoD"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1617668056949	Marionette	INFO	Listening on port 39455
+1617668057069	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://loterias.caixa.gov.br/InstitucionalTema/themes/static/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://loterias.caixa.gov.br/InstitucionalTema/themes/static/js/rybena-1.0.js, line 0: Successfully compiled asm.js code (total compilation time 81ms)
+1617668060294	Marionette	INFO	Stopped listening on port 39455
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1617668114300	geckodriver	INFO	Listening on 127.0.0.1:35251
+1617668114306	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileGqevR9"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1617668117721	Marionette	INFO	Listening on port 42261
+1617668117848	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://loterias.caixa.gov.br/InstitucionalTema/themes/static/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://loterias.caixa.gov.br/InstitucionalTema/themes/static/js/rybena-1.0.js, line 0: Successfully compiled asm.js code (total compilation time 91ms)
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1617668231918	Marionette	INFO	Stopped listening on port 42261
+1617668293670	geckodriver	INFO	Listening on 127.0.0.1:44121
+1617668293675	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileg9X2W6"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1617668296943	Marionette	INFO	Listening on port 41589
+1617668297010	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://loterias.caixa.gov.br/InstitucionalTema/themes/static/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://loterias.caixa.gov.br/InstitucionalTema/themes/static/js/rybena-1.0.js, line 0: Successfully compiled asm.js code (total compilation time 83ms)
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: http://loterias.caixa.gov.br/wps/PA_loterias-pub/js/portalUtil.js, line 32: ReferenceError: can't access lexical declaration 'resultado' before initialization
+1617668398762	Marionette	INFO	Stopped listening on port 41589

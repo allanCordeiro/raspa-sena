@@ -5,6 +5,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.common.exceptions import UnexpectedAlertPresentException
 import time
 import logging
+from conf import Config
 
 class Scraping:
     def __init__(self, uri, award_number=""):
@@ -36,9 +37,10 @@ class Scraping:
                         self._control_number = current_award
                     else:
                         logging.info(f'{time.strftime("%m/%d/%Y %I:%M:%S %p")}: Fim da execução')
+                        Config.set_last_prize(str(self._control_number))
                         break
-                    driver.find_element_by_css_selector("a[ng-click='carregaProximoConcurso()']").click()
                     time.sleep(4)
+                    driver.find_element_by_css_selector("a[ng-click='carregaProximoConcurso()']").click()
                 except UnexpectedAlertPresentException as AlertE:
                     logging.info(f'{time.strftime("%m/%d/%Y %I:%M:%S %p")}: Chegamos no fim da página')
                     logging.error(f'{AlertE.msg} | {AlertE.alert_text}')
