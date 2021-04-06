@@ -1245,3 +1245,18 @@ JavaScript warning: http://loterias.caixa.gov.br/InstitucionalTema/themes/static
 JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
 JavaScript error: http://loterias.caixa.gov.br/wps/PA_loterias-pub/js/portalUtil.js, line 32: ReferenceError: can't access lexical declaration 'resultado' before initialization
 1617668398762	Marionette	INFO	Stopped listening on port 41589
+1617670313453	geckodriver	INFO	Listening on 127.0.0.1:47913
+1617670313459	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileQ3GpZs"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1617670317026	Marionette	INFO	Listening on port 43361
+1617670317091	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://loterias.caixa.gov.br/InstitucionalTema/themes/static/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://loterias.caixa.gov.br/InstitucionalTema/themes/static/js/rybena-1.0.js, line 0: Successfully compiled asm.js code (total compilation time 101ms)
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1617670397245	Marionette	INFO	Stopped listening on port 43361
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
