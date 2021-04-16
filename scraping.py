@@ -15,9 +15,10 @@ class Scraping:
         self._control_number = 0
         logging.basicConfig(filename='logs/scrapping.log', level=logging.INFO)
 
+
     def scrap_award(self):
-        # with webdriver.Firefox(executable_path=r'geckodriver/geckodriver') as driver:
-        with webdriver.Firefox() as driver:
+        with webdriver.Firefox(executable_path=r'geckodriver/geckodriver') as driver:
+        # with webdriver.Firefox() as driver:
             wait = WebDriverWait(driver, 10)
             driver.get(self._uri)
             driver.find_element(By.ID, 'buscaConcurso').send_keys(self._award_number + Keys.ENTER)
