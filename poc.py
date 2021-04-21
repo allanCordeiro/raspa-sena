@@ -83,7 +83,7 @@ def consolida(header, collection, hits, forecast, lucky_numbers):
 
 
 base_geral = []
-with webdriver.Firefox(executable_path=r'geckodriver/geckodriver') as driver:
+with webdriver.Firefox(executable_path=r'geckodriver_/geckodriver') as driver:
     wait = WebDriverWait(driver, 30)
     driver.get('http://loterias.caixa.gov.br/wps/portal/loterias/landing/megasena/')
     driver.find_element(By.ID, "buscaConcurso").send_keys("2300" + Keys.ENTER)

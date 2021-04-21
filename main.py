@@ -17,6 +17,7 @@ def get_data():
 def main():
     uri = Config.get_config('uri')
     prize = Config.get_config('last_prize_scraped')
+    structure = {}
     final_json = get_data()
     scraping = Scraping(
         uri,
@@ -27,8 +28,11 @@ def main():
         normalize = Normalize(line)
         final_json.append(normalize.normalize_data())
 
+    structure['data'] = final_json
+
     with open('data/megasena.json', 'w') as outfile:
-        json.dump(final_json, outfile)
+        # json.dump(final_json, outfile)
+        json.dump(structure, outfile)
 
 
 if __name__ == '__main__':

@@ -1,4 +1,6 @@
 .Python
+geckodriver_
+geckodriver.log
 data
 logs
 pip-selfcheck.json

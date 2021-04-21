@@ -3,6 +3,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.common.exceptions import UnexpectedAlertPresentException
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 import time
 import logging
 from conf import Config
@@ -17,7 +18,7 @@ class Scraping:
 
 
     def scrap_award(self):
-        with webdriver.Firefox(executable_path=r'geckodriver/geckodriver') as driver:
+        with webdriver.Firefox(executable_path=r'geckodriver_/geckodriver') as driver:
         # with webdriver.Firefox() as driver:
             wait = WebDriverWait(driver, 10)
             driver.get(self._uri)

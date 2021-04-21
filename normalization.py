@@ -12,7 +12,8 @@ class Normalize:
         hits = self._get_award(self._award)
         forecast = self._get_forecast(self._forecast)
 
-        self._data[header['prize_number']] = {
+        self._data = {
+            "id": header['prize_number'],
             "date": header['date'],
             "collection": collection,
             "award": hits,
