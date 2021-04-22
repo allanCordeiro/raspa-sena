@@ -9,7 +9,7 @@ def get_data():
     try:
         with open('data/megasena.json', 'r') as outfile:
             data = json.load(outfile)
-            return data
+            return data['data']
     except FileNotFoundError:
         return empty_data
 
